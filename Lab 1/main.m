@@ -42,5 +42,6 @@ semilogy(SNRRANGE, berVect, '-o');
 xlabel('SNR (dB)');
 ylabel('Bit Error Rate (BER)');
 grid on;
+saveas(gcf,'images\BER_against_SNR.png')
 fprintf('SNR (dB)	|   BER\n');
 fprintf('%6.2f      |   %.8f\n', [SNRRANGE; berVect]);
